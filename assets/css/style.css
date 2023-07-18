@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+}
+:root{
+    --primary-color: #FF42A5;
+    --primary-color: #FF42A5;
+    --white-color: #fff;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
 }
 img{
     width: 100%;
@@ -11,4 +21,287 @@ figure,ul,li,h1,h2,h3,h4,h5{
 }
 a{
     text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.btn-primary{
+    color: #FFF;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(45deg, #F948B2 0%, #FF42A5 100%));
+}
+.btn-secondary{
+    color: #FFF;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(45deg, #4EC5F7 0%, #05aef6 100%));
+}
+
+header{
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand .logo-wrap{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.brand .logo-wrap figure img{
+    width: 85px;
+}
+.brand .logo-wrap p{
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.brand .logo-wrap p span{
+    color: var(--primary-color);
+}
+.menus{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.menus li a{
+    color: #3C354F;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    background-color: #E7E6E9;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.socials p{
+    color: #3C354F;
+}
+.socials i{
+    font-size: 25px;
+}
+.socials .youtub{
+    color: #F61C0D;
+}
+.socials .facebook{
+    color: #0677E8;
+}
+
+
+/* Banner Section css code  */
+.banner{
+    background-color: #FBF7FD;
+}
+.banner-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.banner-left .intro-text{
+    color: #0B0223;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.banner-left .game{
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-rule .rule-item{
+    display: flex;
+    align-items: center;
+    column-gap: 10px ;
+    padding: 5px 0;
+}
+.banner-rule .rule-item i{
+    background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-rule .rule-item span{
+    color: #534C64;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.btn-group{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+
+
+/* online section css */
+.section-header{
+    width: max-content;
+    margin: 30px auto;
+
+}
+.section-header p{
+    text-align: center;
+    color: #534C64;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.section-title{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.section-title span{
+    
+    background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.gams-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.gams-grid article{
+    border-radius: 16px;
+}
+.gams-grid article .article-header{
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+.gams-grid article .article-header img{
+    margin-bottom: -4px;
+}
+.gams-grid article .article-title{
+    margin-top: 12px;
+}
+.gams-grid article .article-title a{
+    color: #534C64;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+.gams-grid article .article-header:hover{
+    outline: 3px solid var(--primary-color);
+}
+.gams-grid article .article-header .hover-effect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 2, 35, 0.516);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: transform 0.200s linear;
+}
+.gams-grid article .article-header .hover-effect p{
+    text-align: center;
+}
+.gams-grid article .article-header .hover-effect p.icon{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+.article-section{
+    padding-top: 80px;
+}
+.gams-grid article .article-header .hover-effect p.text{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.gams-grid article .article-header:hover .hover-effect{
+    transform: scale(1);
+}
+
+
+/* About section */
+.about-grid{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+}
+.about-left .bigImg{
+    position: relative;
+    transform: scale(0.8);
+}
+.about-left .bigImg .smallImg{
+    position: absolute;
+    right: -90px;
+    bottom: -90px;
+}
+.about-left .bigImg .smallImg img{
+    width: 250px;
+}
+.about-right .about-title{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+.about-grid{
+    margin-bottom: 40px;
+}
+.about-content {
+    padding: 0px 83px;
+}
+.about-right .about-title span{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-right .about-para{
+    color: #534C64;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
 }
