@@ -355,7 +355,7 @@ header{
     line-height: 35px;
 }
 .career-section{
-    background-image: url('./assets/images/group-65.png');
+    background-image: url("./../images/group-65.png");
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
