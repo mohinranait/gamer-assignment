@@ -497,3 +497,254 @@ footer{
 }
 
 
+
+
+
+/* Tablet screen size */
+@media screen and (max-width: 992px){
+    .container{
+        width: 90%;
+    }
+    .gams-grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .about-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-left{
+        order: 2;
+    }
+    .about-right{
+        order: 1;
+    }
+    .about-left .bigImg {
+        transform: scale(0.7);
+    }
+    .about-left .bigImg .smallImg img {
+        width: 280px;
+    }
+    .about-right .about-title {
+        font-size: 40px;
+        margin-bottom: 10px;
+        line-height: 45px;
+        text-align: center;
+    }
+    .career-grid {
+        display: grid;
+        grid-template-columns: repeat(1,80%);
+        gap: 20px;
+        justify-content: center;
+    }
+    .career-right {
+        height: 600px;
+    }
+    .career-section {
+        background-position: bottom;
+    }
+    .additional-menu {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .banner-left .intro-text {
+        font-size: 35px;
+    }
+    .banner-left .game {
+        font-size: 70px;
+    }
+    .btn {
+        padding: 13px 20px;
+        font-size: 16px;
+    }
+    .banner {
+        padding: 90px 0 30px 0px;
+    }
+    .about-right .about-para {
+        text-align: center;
+    }
+    .banner-rule .rule-item span {
+        font-size: 17px;
+    }
+}
+
+
+
+
+/* Responsive Design using bootstrap brackpoints */
+@media screen and (max-width: 475px) { 
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    img{
+        width: 100%;
+    }
+    .header-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+        height: 210px;
+    }
+    .brand {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menus {
+        gap: 15px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .banner{
+        background-color: var(--white-color);
+    }
+    .banner-left{
+        order: 2;
+        background-color: #f5f2fb;
+        padding: 20px 50px;
+        margin-top: 40px;
+    }
+    .banner-right{
+        order: 1;
+    }
+    .banner-left .game {
+        font-size: 60px;
+    }
+    .banner-left .intro-text {
+        font-size: 30px;
+    }
+    .btn {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    .banner-rule .rule-item span {
+        font-size: 15px;
+    }
+    .banner-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section-title {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .gams-grid {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+    .section-title span {
+        font-size: 25px;
+    }
+    .section-header p {
+        font-size: 14px;
+    }
+    .about-left .bigImg {
+        transform: none;
+        width: 300px;
+    }
+    .about-left .bigImg .smallImg {
+        right: -73px;
+    }
+    .about-left .bigImg .smallImg img {
+        width: 175px;
+    }
+    .gams-grid article {
+        margin-bottom: 15px;
+    }
+    .about-grid .about-left{
+        order: 2;
+    }
+    .about-grid .about-right{
+        order: 1;
+    }
+    .about-right .about-title {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+    .about-right .about-title span {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .about-content {
+        padding: 0px 60px;
+    }
+
+    .about-right .about-para {
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .career-grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .career-left .carrer-description {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    .career-list li span {
+        font-size: 13px;
+        line-height: 30px;
+    }
+    .career-right {
+        height: 340px;
+    }
+    .career-section {
+        background-position: bottom;
+    }
+    .f-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    .about-section {
+        padding-bottom: 100px;
+    }    
+    .f-social {
+        display: grid;
+        grid-template-columns: repeat(3,50px);
+        gap: 15px;
+        margin-top: 25px;
+    }
+    .f-social li {
+        text-align: center;
+    }
+    .additional-menu {
+        column-gap: 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .button-group .game-button img {
+        width: 20px;
+        height: 20px;
+    }
+    .button-group .game-button p {
+        font-size: 10px;
+    }
+    .button-group {
+        display: flex;
+        gap: 2px;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .button-group .game-button {
+        column-gap: 4px;
+        padding: 4px 3px;
+    }
+}
+
+
