@@ -115,7 +115,11 @@ header{
 
 /* Banner Section css code  */
 .banner{
-    background-color: #FBF7FD;
+    /* background-color: #FBF7FD; */
+    background-image: url('./../images/group-14.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
 }
 .banner-grid{
     display: grid;
@@ -559,7 +563,8 @@ footer{
         font-size: 16px;
     }
     .banner {
-        padding: 90px 0 30px 0px;
+        padding: 50px 0 30px 0px;
+        background-size: contain;
     }
     .about-right .about-para {
         text-align: center;
@@ -603,11 +608,11 @@ footer{
         flex-direction: column;
     }
     .banner{
-        background-color: var(--white-color);
+        background-position: bottom;
+        background-size: contain;
     }
     .banner-left{
         order: 2;
-        background-color: #f5f2fb;
         padding: 20px 50px;
         margin-top: 40px;
     }
